@@ -49,5 +49,26 @@ hamburger.addEventListener("click", () => {
     }
 });
 
+sidebar.addEventListener("click", () => {
+    if (isOpen) {
+        sidebar.style.height = "0";
+        sidebarUl.style.display = "none";
+
+        first.style.backgroundColor = "black";
+        second.style.backgroundColor = "black";
+        third.style.backgroundColor = "black";
+
+        first.style.width = "25px";
+        first.style.transform = "translate(0px) rotate(0deg)";
+
+        second.style.display = "block";
+
+        third.style.width = "25px";
+        third.style.transform = "translate(0px) rotate(0deg)";
+
+        isOpen = false;
+    }
+});
+
 // width: 40px;
 // transform: translate(-10px, -10px) rotate(-45deg);
