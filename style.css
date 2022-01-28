@@ -8,21 +8,17 @@
     flex-direction: row;
 }
 
-nav {
+.sidebar {
+    color: white;
     background-color: black;
     position: fixed;
-    height: 100vh;
-}
-
-.sidebar {
-    background-color: black;
-    color: white;
+    height: 0;
 
     /* z-index: 3; */
-    /* width: 0; */
+    width: 100vw;
 
-    display: none;
-    transition: all 0.3s ease-in-out;
+    /* display: none; */
+    transition: all 0.3s ease;
 }
 
 .hamburger {
@@ -41,20 +37,6 @@ nav {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* #first {
-    width: 40px;
-    transform: translate(-10px, 10px) rotate(45deg);
-}
-
-#second {
-    display: none;
-}
-
-#third {
-    width: 40px;
-    transform: translate(-10px, 0px) rotate(-45deg);
-} */
-
 .heading {
     font-size: 40px;
     font-weight: 600;
@@ -62,12 +44,14 @@ nav {
 }
 
 .sidebar ul {
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: column;
     gap: 10px;
     font-size: 24px;
     margin: 0px 50px;
     list-style: none;
+    transition: all 0.3s ease;
 }
 
 .sidebar ul li a {

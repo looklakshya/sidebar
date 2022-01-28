@@ -3,6 +3,7 @@ let first = document.getElementById("first");
 let second = document.getElementById("second");
 let third = document.getElementById("third");
 let sidebar = document.getElementsByClassName("sidebar")[0];
+let sidebarUl = document.getElementById("sidebarUl");
 
 let isOpen = false;
 
@@ -10,8 +11,9 @@ let isOpen = false;
 // transform: translate(-5px, 10px) rotate(45deg);
 hamburger.addEventListener("click", () => {
     if (!isOpen) {
-        sidebar.style.display = "block";
-        sidebar.style.width = "100vw";
+        // sidebar.style.display = "block";
+        sidebar.style.height = "100vh";
+        sidebarUl.style.display = "flex";
 
         first.style.backgroundColor = "red";
         second.style.backgroundColor = "red";
@@ -27,8 +29,9 @@ hamburger.addEventListener("click", () => {
 
         isOpen = true;
     } else {
-        sidebar.style.display = "none";
-        sidebar.style.width = "0";
+        // sidebar.style.display = "none";
+        sidebar.style.height = "0";
+        sidebarUl.style.display = "none";
 
         first.style.backgroundColor = "black";
         second.style.backgroundColor = "black";
