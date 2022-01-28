@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    background-color: black;
+    color: white;
+
+    /* z-index: 3; */
+    position: fixed;
+    height: 100vh;
+    /* width: 0; */
+
+    display: none;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.hamburger {
+    margin: 20px 0px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.lines {
+    width: 25px;
+    background-color: red;
+    height: 2px;
+    margin: 7px 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* #first {
+    width: 40px;
+    transform: translate(-10px, 10px) rotate(45deg);
+}
+
+#second {
+    display: none;
+}
+
+#third {
+    width: 40px;
+    transform: translate(-10px, 0px) rotate(-45deg);
+} */
+
+.heading {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 80px 110px;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 24px;
+    margin: 0px 50px;
+    list-style: none;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
