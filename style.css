@@ -29,8 +29,8 @@
 
 .lines {
     width: 25px;
-    background-color: red;
-    height: 2px;
+    background-color: black;
+    height: 3px;
     margin: 7px 25px;
     transition: all 0.3s ease-in-out;
 }

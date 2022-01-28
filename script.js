@@ -11,8 +11,11 @@ let isOpen = false;
 hamburger.addEventListener("click", () => {
     if (!isOpen) {
         sidebar.style.display = "block";
-        sidebar.style.transition = "0.3s ease-in-out";
-        // sidebar.style.width = "100vw";
+        sidebar.style.width = "100vw";
+
+        first.style.backgroundColor = "red";
+        second.style.backgroundColor = "red";
+        third.style.backgroundColor = "red";
 
         first.style.width = "40px";
         first.style.transform = "translate(-10px, 10px) rotate(45deg)";
@@ -25,8 +28,11 @@ hamburger.addEventListener("click", () => {
         isOpen = true;
     } else {
         sidebar.style.display = "none";
-        sidebar.style.transition = "0.3s ease-in-out";
-        // sidebar.style.width = "0";
+        sidebar.style.width = "0";
+
+        first.style.backgroundColor = "black";
+        second.style.backgroundColor = "black";
+        third.style.backgroundColor = "black";
 
         first.style.width = "25px";
         first.style.transform = "translate(0px) rotate(0deg)";
