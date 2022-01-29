@@ -18,14 +18,15 @@
     color: white;
     background-color: black;
     position: fixed;
-    height: 0;
+    height: 100vh;
 
     /* z-index: 3; */
     width: 100vw;
 
     /* display: none; */
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     font-family: var(--font);
+    z-index: -10;
 }
 
 .hamburger {
@@ -36,12 +37,25 @@
 }
 
 .lines {
-    width: 25px;
-    background-color: black;
+    width: 40px;
+    background-color: red;
     height: 3px;
     margin: 7px 25px;
     transition: all 0.3s ease-in-out;
     -webkit-tap-highlight-color: transparent;
+}
+
+#first {
+    transform: translate(-10px, 10px) rotate(45deg);
+}
+
+#second {
+    width: 25px;
+    display: none;
+}
+
+#third {
+    transform: translate(-10px, 0px) rotate(-45deg);
 }
 
 .heading {
@@ -51,17 +65,27 @@
 }
 
 .sidebar ul {
-    /* display: flex; */
-    display: none;
+    display: flex;
+    /* display: none; */
     flex-direction: column;
     gap: 10px;
     font-size: 24px;
     margin: 0px 50px;
     list-style: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in;
 }
 
 .sidebar ul li a {
     color: white;
     text-decoration: none;
+}
+
+.main {
+    color: black;
+    margin: 70px;
+}
+
+.main h1 {
+    font-family: var(--font);
+    font-weight: 400;
 }
